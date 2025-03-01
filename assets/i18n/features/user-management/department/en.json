@@ -1,0 +1,9 @@
+{
+  "department": {
+    "addDepartment": "Add Department",
+    "enterDepartmentName": "Enter Department Name",
+    "departmentName": "Department Name",
+    "goToUserManagement": "Go to User Management",
+    "addDepartmentSuccessMsg": "Department added successfully"
+  }
+}

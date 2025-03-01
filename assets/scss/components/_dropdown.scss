@@ -1,0 +1,171 @@
+// // @import 'utilities/typography';
+
+// $border-radius: 4px;
+
+// ncnp-dropdown.ng-touched.ng-invalid {
+//   .ncnp-dropdown-component .ncnp-dropdown-container {
+//     &::after {
+//       border-bottom-color: var(--ncnp-error-medium-700);
+//     }
+//     .p-dropdown {
+//       border-color: var(--ncnp-error-medium-700);
+//     }
+//   }
+// }
+
+// .ncnp-dropdown-component {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0.5rem;
+//   .ncnp-dropdown-label {
+//     @include typography.font-style('text-sm');
+//     color: var(--ncnp-neutral-dark-850);
+//     .label-required {
+//       color: var(--ncnp-error-medium-700);
+//       margin-inline-end: 0.25rem;
+//     }
+//   }
+// }
+
+// .ncnp-helper-text-container {
+//   display: flex;
+//   gap: 0.5rem;
+//   color: var(--ncnp-neutral-medium-700);
+//   .ncnp-helper-text {
+//     @include typography.font-style('text-sm');
+//   }
+//   .ncnp-helper-text-icon {
+//     .pi {
+//       font-size: 1rem;
+//     }
+//   }
+// }
+
+// .ncnp-dropdown-container {
+//   display: inline-block;
+//   position: relative;
+//   width: 100%;
+
+//   &::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+
+//     width: 100%;
+//     height: 100%;
+//     pointer-events: none;
+
+//     border-bottom: var(--border-radius-xs) solid var(--ncnp-neutral-dark-950);
+//     clip-path: inset(0 round $border-radius);
+
+//     opacity: 0;
+//     transform: scaleX(0.25);
+//     transform-origin: 50%;
+
+//     transition:
+//       opacity 0.5s ease,
+//       transform 0.5s;
+//   }
+//   &:focus-within::after {
+//     transform: scaleX(1);
+//     opacity: 1;
+//   }
+//   &:active::after {
+//     transform: scaleX(0.3);
+//   }
+// }
+
+// .ncnp-dropdown {
+//   .p-dropdown {
+//     padding: 0;
+//     border: 1px solid var(--ncnp-neutral-medium-400);
+//     width: 100%;
+
+//     border-radius: $border-radius;
+//     box-shadow: none;
+//     .p-placeholder,
+//     .p-inputtext {
+//       padding: 0.45rem 1rem;
+//     }
+
+//     &:hover {
+//       border-color: var(--ncnp-neutral-medium-700);
+//     }
+//     &.p-focus {
+//       border-color: var(--ncnp-neutral-medium-400);
+//     }
+//     .p-overlay {
+//       padding-top: 8px;
+//       .p-dropdown-panel {
+//         border-radius: $border-radius;
+//         overflow: hidden;
+//         border: 1px solid var(--ncnp-neutral-medium-300);
+
+//         box-shadow: 0px 20px 24px -4px #10182814;
+
+//         .p-dropdown-items {
+//           padding: 0;
+//         }
+
+//         .p-dropdown-item {
+//           display: flex;
+//           flex-direction: row-reverse;
+//           justify-content: space-between;
+//           align-items: center;
+//           padding: 8px;
+//           &:hover {
+//             background-color: var(--ncnp-neutral-light-50);
+//           }
+//           &.p-focus {
+//             background-color: var(--ncnp-neutral-light-200);
+//             color: var(--ncnp-neutral-dark-1000);
+//           }
+//         }
+//       }
+//     }
+//     .p-dropdown-trigger {
+//       &[aria-expanded='true'] {
+//         .p-icon-wrapper {
+//           transform: scaleY(-1);
+//         }
+//       }
+//     }
+//     .p-dropdown-trigger .p-icon-wrapper {
+//       background: url(../../icons/drop-down-icon.svg) no-repeat;
+//       background-size: contain;
+//       width: 24px;
+//       height: 24px;
+
+//       svg {
+//         display: none;
+//       }
+//     }
+//     .p-dropdown-clear-icon {
+//       right: 2.5rem;
+//       &:dir(rtl) {
+//         left: 2.5rem;
+//         right: unset;
+//       }
+//     }
+//   }
+// }
+
+// .p-dropdown {
+//   border: 1px solid var(--ncnp-neutral-medium-400);
+//   .p-dropdown:not(.p-disabled):hover {
+//     border-color: var(--ncnp-neutral-medium-400);
+//   }
+// }
+// .p-dropdown:not(.p-disabled).p-focus {
+//   box-shadow: none;
+//   border-color: var(--ncnp-neutral-medium-400);
+// }
+// .p-dropdown-label {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .p-dropdown .p-inputtext {
+//   border: 0;
+// }

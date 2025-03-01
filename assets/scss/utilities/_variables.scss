@@ -1,0 +1,31 @@
+// General variables can go here
+@use "./_colors";
+$Secondary: #F8F8F8;
+$green:#069A6E;
+$ncnp-font-family: 'NCNP';
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700
+);
+
+:root {
+  --border-radius-none: 0rem;
+  /* 0px */
+  --border-radius-xs: 0.125rem;
+  /* 2px */
+  --border-radius-sm: 0.25rem;
+  /* 4px */
+  --border-radius-md: 0.5rem;
+  /* 8px */
+  --border-radius-lg: 1rem;
+  /* 16px */
+  --border-radius-xl: 1.5rem;
+  /* 24px */
+  --border-radius-full: 9999px;
+  /* 9999px */
+  --header-height: 72px;
+  --entity-header-height: 9.8rem;
+  --footer-height: 13rem;
+}

@@ -1,0 +1,53 @@
+//media queries
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+//borders
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin border($width: null, $style: null, $color: null, $radius: null) {
+    @if $width and $style and $color {
+        border: $width $style $color;
+    } @else {
+        @if $width {
+            border-width: $width;
+        }
+
+        @if $style {
+            border-style: $style;
+        }
+
+        @if $color {
+            border-color: $color;
+        }
+    }
+
+    @if $radius {
+        border-radius: $radius;
+    }
+}
+
+@mixin trim($lines) {
+    display: -webkit-box !important;
+    -webkit-line-clamp: $lines !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}

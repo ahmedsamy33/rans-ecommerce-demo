@@ -1,0 +1,16 @@
+{
+    "home": "Home",
+    "validations": {
+        "arabic": "Arabic association's name must consist of Arabic letters only",
+        "english": "English association's name must consist of English letters only",
+        "invalid": "Invalid value",
+        "maxLength": "Maximum length is {{requiredLength}}",
+        "minLength": "Minimum length is {{requiredLength}}",
+        "pattern": "Wrong pattern",
+        "required": "This field is required",
+        "email": "The entered email format is invalid"
+    },
+    "actions":{
+        "next": "Next"
+    }
+}

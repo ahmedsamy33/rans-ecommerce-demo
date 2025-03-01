@@ -1,0 +1,100 @@
+@use 'variables' as vars;
+
+$display-font-sizes: (
+  'display-2xl': (
+    font-size: 4.5rem,
+    line-height: 5.625rem,
+    letter-spacing: -0.02em
+  ),
+  'display-xl': (
+    font-size: 3.75rem,
+    line-height: 4.5rem,
+    letter-spacing: -0.02em
+  ),
+  'display-lg': (
+    font-size: 3rem,
+    line-height: 3.75rem,
+    letter-spacing: -0.02em
+  ),
+  'display-md': (
+    font-size: 2.25rem,
+    line-height: 2.75rem,
+    letter-spacing: 0
+  ),
+  'display-sm': (
+    font-size: 1.875rem,
+    line-height: 2.375rem,
+    letter-spacing: 0
+  ),
+  'display-xs': (
+    font-size: 1.5rem,
+    line-height: 2rem,
+    letter-spacing: 0
+  )
+);
+
+$text-font-sizes: (
+  'text-xl': (
+    font-size: 1.25rem,
+    line-height: 1.875rem,
+    letter-spacing: 0
+  ),
+  'text-lg': (
+    font-size: 1.125rem,
+    line-height: 1.75rem,
+    letter-spacing: 0
+  ),
+  'text-md': (
+    font-size: 1rem,
+    line-height: 1.5rem,
+    letter-spacing: 0
+  ),
+  'text-sm': (
+    font-size: 0.875rem,
+    line-height: 1.25rem,
+    letter-spacing: 0
+  ),
+  'text-xs': (
+    font-size: 0.75rem,
+    line-height: 1.125rem,
+    letter-spacing: 0
+  ),
+  'text-2xs': (
+    font-size: 0.625rem,
+    line-height: 1rem,
+    letter-spacing: 0
+  )
+);
+
+$font-sizes: map-merge($display-font-sizes, $text-font-sizes);
+
+@mixin font-style($size-name) {
+  $font-size: map-get(map-get($font-sizes, $size-name), font-size);
+  $line-height: map-get(map-get($font-sizes, $size-name), line-height);
+  $letter-spacing: map-get(map-get($font-sizes, $size-name), letter-spacing);
+
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: vars.$ncnp-font-family;
+}
+
+@each $size-name in map-keys($font-sizes) {
+  .ncnp-#{$size-name} {
+    @include font-style($size-name);
+  }
+}
+
+@each $weight-name, $weight in vars.$font-weights {
+  .ncnp-font-#{$weight-name} {
+    font-weight: $weight;
+  }
+}
+
+:root {
+  --ncnp-font-family: #{vars.$ncnp-font-family};
+
+  @each $weight-name, $weight in vars.$font-weights {
+    --ncnp-font-#{$weight-name}: #{$weight};
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "department": {
+    "addDepartment": "إضافة قسم",
+    "enterDepartmentName": "أدخل اسم القسم",
+    "departmentName": "اسم القسم",
+    "goToUserManagement": "انتقل إلى إدارة المستخدمين",
+    "addDepartmentSuccessMsg": "تمت إضافة القسم بنجاح"
+  }
+}

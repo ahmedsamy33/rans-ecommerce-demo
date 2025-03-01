@@ -1,0 +1,22 @@
+{
+  "login": {
+    "title": "Login",
+    "welcome": "Welcome to Marketplace Admin Portal",
+    "userId": "User ID",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "employeeId_required": "Employee ID is required",
+    "employeeId_invalid": "Please enter a valid email address",
+    "password_required": "Password is required",
+    "email_invalid": "Email is invalid",
+
+    "loginButton": "Login",
+    "otp": {
+      "title": "One Time Password",
+      "subtitle": "Enter the code you have at ARB Wusul",
+      "phoneText": "Code sent to +966 ** **** 291",
+      "noCode": "Didn't receive code?",
+      "resend": "Resend Code"
+    }
+  }
+}

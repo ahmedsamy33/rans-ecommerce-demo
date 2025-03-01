@@ -1,0 +1,27 @@
+@use "primeicons/primeicons.css";
+@use "./utilities/colors";
+@use "./utilities/variables";
+@use "./utilities/mixins";
+@use "./utilities/typography";
+@use "./utilities/fonts";
+@use "color";
+@use "font";
+
+// components
+@use "components/button";
+@use "components/checkbox";
+@use "components/dropdown";
+@use "components/radio-button";
+@use "components/table";
+@use "components/tabview";
+@use "components/text-area";
+@use "components/text-field";
+@use "components/stepper";
+@use "components/confirm-dialog";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&display=swap');
+
+// Set as default font
+body {
+  font-family: "Noto Sans Display", sans-serif;
+}

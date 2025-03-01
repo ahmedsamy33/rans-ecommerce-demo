@@ -1,0 +1,23 @@
+.ncnp-tables-tabview .p-tabview .p-tabview-panels {
+  padding: 0 !important;
+}
+.p-tabview {
+  padding: 0 !important;
+  .p-tabview-nav {
+    border-width: 0 0 3px 0;
+
+    li .p-tabview-nav-link {
+      color: var(--ncnp-neutral-medium-700);
+      font-weight: 500;
+    }
+    li.p-highlight .p-tabview-nav-link {
+      color: var(--ncnp-neutral-dark-850);
+      font-weight: 700;
+      border-color: var(--ncnp-success-medium-700);
+      border-bottom-width: 3px;
+    }
+    li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+      border-bottom-width: 3px;
+    }
+  }
+}
