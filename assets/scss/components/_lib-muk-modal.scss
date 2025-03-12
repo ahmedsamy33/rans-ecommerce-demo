@@ -1,0 +1,44 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+
+.modal-container {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-header {
+    padding: 1rem !important;
+    @include flex-between;
+    &.header-bg {
+      background-color: $off-white !important;
+      padding-bottom: 12px !important;
+      .modal-close-icon {
+        background-color: $white;
+      }
+    }
+    .modal-title {
+      font-size: $font-size-xxxl !important;
+      font-weight: 500 !important;
+      color: $secondary-purple3 !important;
+      margin: 0 !important;
+    }
+    .modal-close-icon {
+      @include rounded_icon;
+      color: $secondary-purple3 !important;
+      border: none !important;
+      .stc-icon_rounded {
+        width: 100% !important;
+        height: 100% !important;
+        @include flex-center;
+        font-weight: 500 !important;
+        overflow: hidden !important;
+        font-size: $font-size-xlg !important;
+      }
+    }
+    &::before {
+      content: unset !important;
+    }
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}

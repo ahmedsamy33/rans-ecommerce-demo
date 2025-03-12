@@ -1,0 +1,36 @@
+// Dropdown Menu Styles
+.dropdown {
+    position: absolute;
+    right: 0;
+    margin-top: 0.5rem; /* Tailwind mt-2 */
+    width: 12rem; /* Tailwind w-48 */
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    li {
+      padding: 0.5rem 1rem;
+      color: #374151;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #f3f4f6;
+      }
+    }
+  
+    // Focus-within pseudo-class toggles visibility
+    .relative:focus-within & {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .action{
+    background: #F8F8F8;
+    padding: 10px;
+    border-radius: $percent-50;
+    cursor: pointer;
+  }

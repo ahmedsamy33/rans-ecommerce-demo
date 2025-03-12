@@ -1,0 +1,292 @@
+@mixin for-phone-only {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @mixin for-tablet-only {
+    @media only screen and (max-width:960px){
+      @content;
+    }
+  }
+
+  @mixin rounded_icon{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 28px;
+    height: 28px;
+  }
+@mixin border-radius{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+}
+  @mixin flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin flex-center {
+    display: flex !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;  
+    
+    
+  }
+  @mixin flex-start {
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  @mixin flex-start__canter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @mixin flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  @mixin flex-between {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  @mixin column_self{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+  }
+  @mixin column_flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  @mixin column_flex_end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+@mixin truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 114px;
+}
+
+@mixin border-radius-rounded-pill {
+  border-radius: $smooth-radius-rounded-pill;
+  -webkit-border-radius: $smooth-radius-rounded-pill;
+  -moz-border-radius: $smooth-radius-rounded-pill;
+  -ms-border-radius: $smooth-radius-rounded-pill;
+  -o-border-radius: $smooth-radius-rounded-pill;
+}
+@mixin border-radius-rounded-smooth {
+  border-radius: $smooth-radius;
+  -webkit-border-radius: $smooth-radius;
+  -moz-border-radius: $smooth-radius;
+  -ms-border-radius: $smooth-radius;
+  -o-border-radius: $smooth-radius;
+}
+@mixin btn-primary {
+  color: $white!important;
+  background-color: $primary!important;
+  border-color: transparent!important;
+}
+@mixin btn-primary-light {
+  color: $primary!important;
+  background-color: $primary-light!important;
+  border-color: $primary-light!important;
+}
+@mixin btn-outline-primary {
+  color: $primary!important;
+  background-color: transparent!important;
+  border-color: $primary!important;
+}
+@mixin btn-secondary {
+  color: white!important;
+  background-color: $secondary!important;
+  border-color: $secondary!important;
+}
+@mixin btn-secondary-light {
+  color: $secondary!important;
+  background-color: $secondary-light!important;
+  border-color: $secondary-light!important;
+}
+@mixin btn-outline-secondary {
+  color: $secondary!important;
+  background-color: transparent!important;
+  border-color: $secondary!important;
+}
+@mixin btn-success {
+  color: white!important;
+  background-color: $success!important;
+  border-color: $success!important;
+}
+@mixin btn-success-light {
+  color: $success!important;
+  background-color: $success-light!important;
+  border-color: $success-light!important;
+}
+@mixin btn-outline-success {
+  color: $success!important;
+  background-color: transparent!important;
+  border-color: $success!important;
+}
+@mixin btn-danger {
+  color: white!important;
+  background-color: $danger!important;
+  border-color: $danger!important;
+}
+@mixin btn-danger-light {
+  color: $danger!important;
+  background-color: $danger-light!important;
+  border-color: $danger-light!important;
+}
+@mixin btn-outline-danger {
+  color: $danger!important;
+  background-color: transparent!important;
+  border-color: $danger!important;
+}
+@mixin btn-warning {
+  color: white!important;
+  background-color: $warning!important;
+  border-color: $warning!important;
+}
+@mixin btn-warning-light {
+  color: $warning!important;
+  background-color: $warning-light!important;
+  border-color: $warning-light!important;
+}
+@mixin btn-outline-warning{
+  color: $warning!important;
+  background-color: transparent!important;
+  border-color: $warning!important;
+}
+@mixin btn-info{
+  color: white!important;
+  background-color: $info!important;
+  border-color: $info!important;
+}
+@mixin btn-info-light{
+  color: $info!important;
+  background-color: $info-light!important;
+  border-color: $info-light!important;
+}
+@mixin btn-outline-info{
+  color: $info!important;
+  background-color: transparent!important;
+  border-color: $info!important;
+}
+@mixin btn-dark{
+  color: $white !important;
+  background-color: $dark!important;
+  border-color: $dark!important;
+}
+@mixin btn-dark-light{
+  color: $dark!important;
+  background-color: $dark-light!important;
+  border-color: $dark-light!important;
+}
+@mixin btn-outline-dark{
+  color: $dark!important;
+  background-color: transparent!important;
+  border-color: $dark!important;
+}
+@mixin btn__primary{
+  color: $white;
+  background-color: $primary-purple;
+  font-size: 12px;
+}
+@mixin btn__secondary{
+  color: $white;
+  background-color: $coral;
+  font-size: 12px;
+}
+@mixin btn__light{
+  color: $secondary;
+  background-color: $off-white;  
+  font-size: 12px;
+}
+@mixin success__approved{
+  color: $success !important;
+  background-color: $success2 !important;
+}
+@mixin primary__status{
+  color: $primary-purple !important;
+  background-color: $last-purple !important;
+}
+@mixin sub__primary__status{
+  color: $secondary-purple !important;
+  background-color: $off-white2 !important;
+}
+@mixin success__completed{
+  color: $success3 !important;
+  background-color: $success4 !important;
+}
+@mixin danger__status{
+  color:  $coral !important;
+  background-color: $coral2 !important;
+}
+@mixin info__status{
+  color: $info !important;
+  background-color: $info2 !important;
+}
+@mixin sub__info__status{
+  color: $oasis !important;
+  background-color: $oasis-light !important;
+}
+@mixin warning__status{
+  color: $yellow !important;
+  background-color: $yellow3 !important;
+}
+@mixin sub__warning__status{
+  color: $yellow2 !important;
+  background-color: $yellow4 !important;
+}
+@mixin orange__status{
+  color: $orange !important;
+  background-color: $orange2 !important;
+}
+@mixin secondary__status{
+  color: $black !important;
+  background-color: $secondary2 !important;
+}
+@mixin secondary__close{
+  color: $secondary !important;
+  background-color: $off-white !important;
+}
+@mixin pagination-action_rounded{
+  background: $white;
+  color:$off-white10!important;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+@mixin pagination-list-item__radius{
+  border-radius:2px;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  -ms-border-radius:2px;
+  -o-border-radius:2px;
+}
+@mixin small_width_height{
+  width: 26px;
+  height: 26px;
+}

@@ -1,0 +1,49 @@
+<nav class="header">
+  <div class="header__logo">
+    <img src="./assets/hub-icons/hub.svg" alt="">
+  </div>
+  <div class="header__content">
+    <div class="search">
+      <input type="text" placeholder="{{currentLangauge=='ar'?arTranslateFile.search:enTranslateFile.search}}">
+      <img src="./assets/hub-icons/search-icon.svg" alt="search-icon">
+    </div>
+    <div class="notification">
+      <img src="./assets/hub-icons/envelope.png" alt="envelope">
+    </div>
+    <div class="user-info" (click)="showDropDown = !showDropDown">
+      <span class="user-info__title">{{ (currentUser | async)?.name | split:0 }}</span>
+      <img src="./assets/hub-icons/arrow.svg" alt="arrow" class="user-info__arrow">
+      <img [src]="hasImage ? userObject['profile-image'] : './assets/hub-icons/user_male_portrait.png'" alt="user_male"
+        class="user-info__logo">
+    </div>
+    <div *ngIf="showDropDown" class="dropdown">
+      <ul class="dropdown__list">
+        <li (click)="rediectLink('https://mygate.stc.com.sa/mygate/ProfileDetails')">
+          <img alt="user-profile" [src]="hasImage ? userObject['profile-image'] : './assets/hub-icons/user-profile.png'" />
+          <span class="dropdown__title">{{currentLangauge=='ar'?arTranslateFile.profile:enTranslateFile.profile}}</span>
+        </li>
+        <li (click)="toggleLanguage()">
+          <img src="./assets/hub-icons/lang.svg" alt="user-profile">
+          <span
+            class="dropdown__title">{{currentLangauge=='ar'?arTranslateFile.language:enTranslateFile.language}}</span>
+        </li>
+        <li (click)="rediectLink('https://fsso.stc.com.sa/portal/changePasswordform')">
+          <img src="./assets/hub-icons/padlock.png" alt="user-profile">
+          <span
+            class="dropdown__title">{{currentLangauge=='ar'?arTranslateFile.changePassword:enTranslateFile.changePassword}}</span>
+        </li>
+        <li (click)="rediectLink('https://ag.stc.com.sa/dag/launcher.php')">
+          <img src="./assets/hub-icons/duo-icon.png" alt="user-profile">
+          <span class="dropdown__title">{{currentLangauge=='ar'?arTranslateFile.due:enTranslateFile.due}}</span>
+        </li>
+        <li (click)="logout()">
+          <img src="./assets/hub-icons/logout.png" alt="logout">
+          <span
+            class="dropdown__title dropdown__warning">{{currentLangauge=='ar'?arTranslateFile.logOut:enTranslateFile.logOut}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="dorpdown__overlay" *ngIf="showDropDown"></div>

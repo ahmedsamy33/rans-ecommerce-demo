@@ -1,0 +1,52 @@
+@import "../icons";
+
+.custom-input-search {
+    position: relative !important;
+    padding: 10px !important;
+    .stc-search_icon {
+      position: absolute !important;
+      right: 15px !important;
+      top: 15px !important;
+      cursor: pointer;
+    }
+    .custom-select-search {
+      height: 10%;
+      width: 100%;
+      padding: 8px 0 8px 8px;
+      background-clip: padding-box;
+      border: 1px solid $light-gray3 !important;
+      appearance: none;
+      border-radius: 0.375rem;
+    }
+}
+.mat-mdc-option{
+    border-bottom: 1px solid $off-white11 !important;
+    background-color: $off-white4 !important;
+}
+.footer-action {
+    padding: 0 8px !important;
+    max-height: 150px;
+    position: sticky;
+    background-color: $off-white4 !important;
+    border-top: 1px solid $off-white11;
+    z-index: 10;
+    bottom: 0;
+    &:hover {
+    background-color: $off-white4 !important;
+    z-index: 10;
+    opacity: 1;
+    }
+    .stc-add{
+    width: 100%;
+        @include flex-end;
+    .stc-btn{
+        color: $coral !important;
+        background-color: transparent;
+        padding: 10px 22px !important;
+        font-size: 15px;
+        @include flex ;
+    }
+    }
+    
+}
+

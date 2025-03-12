@@ -1,0 +1,76 @@
+
+    .muk-accordion {
+      .mat-expansion-panel-header-description {
+        @include flex-end;
+      }
+      .mat-expansion-panel-header-title {
+        font-size: 18px;
+        display: flex;
+        gap: 4px;
+        .mat-expansion-indicator::after {
+          color: $white !important;
+        }
+      }
+      .mat-action-row {
+        border: none;
+        padding: 1rem;
+      }
+      .title_accordion {
+        color: $primary-purple;
+        font-weight: 500;
+        font-size: $font-size-md;
+      }
+  
+      .mat-expansion-panel-header {
+        height: 70px;
+      }
+      .stc-arrow__down {
+        @include flex-center;
+        font-size: 26px;
+      }
+    }
+    .mat-expansion-panel-body {
+      padding: 0 !important;
+    }
+     .mat-expansion-panel-body {
+      padding: 0 !important;
+    }
+    .mat-expansion-panel.mat-expansion-panel {
+      margin-bottom: 10px !important;
+      box-shadow: none !important;
+      border: 2px dotted $dark-gray4 !important;
+      border-radius: 6px !important;
+    }
+    .mat-expansion-panel-header.mat-expanded {
+      height: 70px;
+    }
+    .mat-expansion-panel-header {
+      height: 70px;
+      font-size: $font-size-md;
+      font-weight: 400;
+      padding: 0px 16px !important;
+    }
+    .stc-even {
+      background: $white;
+      padding: 1rem;
+      margin: 0px !important;
+      &.stc-even:nth-child(odd) {
+        background-color: $light-gray !important;
+      }
+    }
+    .row-even,
+    .row-odd {
+      padding: 1rem;
+      margin: 0px !important;
+    }
+
+    .row-even {
+      background: $white;
+    }
+    .row-odd {
+      background-color: $light-gray !important;
+    }
+
+    .mat-content.mat-content-hide-toggle {
+      margin: 0px !important;
+    }

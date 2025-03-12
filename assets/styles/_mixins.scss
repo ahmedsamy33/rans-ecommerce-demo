@@ -1,0 +1,61 @@
+@mixin for-phone-only {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @mixin for-tablet-only {
+    @media only screen and (max-width:960px){
+      @content;
+    }
+  }
+
+
+@mixin transition($property, $duration) {
+  transition: $property $duration ease;
+}
+@mixin flex-auto {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// _mixins.scss
+@mixin btn-styles($bg-color, $text-color) {
+  background: $bg-color !important;
+  color: $text-color !important;
+}
+
+@mixin icon-before($icon-path) {
+  &::before {
+    content: url($icon-path) !important;
+    width: $icon-size;
+    height: $icon-size;
+  }
+}
+
+@mixin button-base {
+  border-radius: $btn-radius;
+  font-size: $font-size-sm;
+  font-weight: $font-default;
+  line-height: $line-height;
+  min-height: $btn-height;
+}

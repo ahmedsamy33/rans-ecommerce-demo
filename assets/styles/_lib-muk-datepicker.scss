@@ -1,0 +1,12 @@
+.date-text-gray {
+  lib-muk-datepicker {
+    .mat-mdc-text-field-wrapper {
+      border: 1px solid #d7d8da !important;
+      border-radius: 8px !important;
+    }
+    .mat-mdc-form-field-flex {
+      display: flex !important;
+      align-items: center !important;
+    }
+  }
+}

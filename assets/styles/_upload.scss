@@ -1,0 +1,76 @@
+
+
+lib-muk-file-uploader {
+    margin-block: 8px !important;
+    display: block;
+    label {
+        color: #1D252D !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        margin-bottom: 8px !important;
+        display: block  !important;
+        .required-field {
+            color: #FF375E !important;
+            font-size: 16px !important;
+            font-style: normal !important;
+            font-weight: 500 !important;
+            line-height: normal !important;
+        }
+    }
+    .upload-file-input {
+        min-height: 156px;
+        .stc-title__uploader ,.stc-choose_uploader{
+            color: #1D252D !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+        }
+        .stc-size {
+            color: #8E9AA0 !important;
+            font-size: 12px !important;
+            font-weight: 400 !important;
+        }
+    }
+    .stc-uploader {
+        position: relative;
+        gap: 0 !important;
+        svg {
+          display: none; // Hide the existing SVG
+        }
+      
+        &::before {
+          content: "";
+          display: block;
+          width: 36px; // Set width to match the original SVG size
+          height: 36px; // Set height to match the original SVG size
+          background-image: url('../../assets/icons/upload-state.svg'); // Replace with your new SVG path
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .uploader {
+
+        .stc-row__status {
+            align-items: flex-start !important;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+      }
+
+
+}
+lib-muk-toggle {
+    .mat-mdc-slide-toggle .mdc-switch:enabled .mdc-switch__track:after {
+        background-color: #FF375E !important;
+    }
+}
+
+.mdc-label {
+    color: #1D252D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding-inline-start: 8px;
+}

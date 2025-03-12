@@ -1,0 +1,60 @@
+.stc-status {
+    border: none;
+    @include flex-center;
+    padding: 6px 32px;
+    border-radius: 4px;
+    max-width: 125px;
+    min-width: 125px;
+}
+.stc-success__approved{
+    @include success__approved;
+}
+.stc-primary__status{
+@include primary__status;
+
+}
+.stc-sub__primary__status{
+ @include sub__primary__status;
+}
+
+.stc-success__completed{
+@include success__completed;
+}
+.stc-danger__status{
+@include danger__status;
+}
+
+.stc-info__status{
+@include info__status;
+}
+.stc-sub__info__status{
+@include sub__info__status;
+}
+.stc-warning__status{
+@include warning__status;
+}
+.stc-sub__warning__status{
+@include sub__warning__status;
+}
+.stc-orange__status{
+@include orange__status;
+}
+.stc-secondary__status{
+@include secondary__status;
+}
+.stc-secondary__close{
+@include secondary__close;
+}
+.icon-delete{
+    font-size: $font-size-xxxl;  
+}
+.stc-back{
+    font-size: $font-size-xs;
+}
+.stc-approve{
+   font-size: $font-size-xs; 
+}
+.icon-check_circle_outline{
+    font-size: $font-size-xxxl;
+
+}

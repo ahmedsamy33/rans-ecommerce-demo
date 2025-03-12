@@ -1,0 +1,82 @@
+//start change style uploader //
+.stc-uploader{
+    @include column_flex;
+    gap: .75rem;
+    padding: 12px 0;
+    .stc-choose_uploader{
+      color: $coral;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .stc-title__uploader{
+      color:  $off-white5;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .stc-subtitle__upolader{
+      color: $coral;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .stc-size{
+      color:  $off-white5;
+      font-size: 14px;
+    }
+  
+  }
+  //End change style uploader //
+
+  //start change file upload style //
+  .stc-files{
+    @include flex-between;
+    gap: 1rem;
+    border-radius: 6px;
+    margin-inline: 1rem;
+    background: $off-white6;
+    padding: 8px 16px;
+    border-radius: 6px;
+    width: 16%;
+    .stc-subfile{
+      @include flex-center;
+      gap: .5rem;
+    }
+    .stc-subfiles{
+      @include column_self;
+    }
+    .stc-icon__file{
+      display: flex;
+      font-size: 18px;
+      background: $white;
+      padding: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .stc-title__file{
+      font-size: 14px;
+      font-weight: 500;
+      color: $black3;
+      opacity: 1;
+    }
+    .stc-file__size{
+      font-size: 12px;
+      color: $off-white5;
+      opacity: 1;
+    }
+    .stc-group__icons{
+      @include flex-center;
+      gap: 0.75rem;
+      .stc-icon{
+        display: flex;
+        font-size: 22px;
+        background: $white;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $coral;
+        font-size: 12px;
+      }
+  
+    }
+  }
+   //End change file upload style //

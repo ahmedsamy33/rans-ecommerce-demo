@@ -1,0 +1,47 @@
+.stc-action{
+    background-color: $off-white;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+.stc-action__circle{
+    background-color: $black2;
+    color: $primary-purple;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+}
+.stc-action__sub__circle{
+    background-color: $white;
+    color: $coral;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+}
+.stc-action__sub__circle__grey{
+    background-color: $off-white;
+    color: $coral;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+}
+.stc-action__search{
+    color: $primary-purple;
+    background-color: $white;
+}
+.stc-action__primary_icon{
+    background-color: $primary-purple;
+    color: $white;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+.stc-action__coral{
+    color: $coral;
+}
+.stc-action__primary{
+    color: $primary-purple;
+}
+.stc-action__black{
+    color: $black;
+}

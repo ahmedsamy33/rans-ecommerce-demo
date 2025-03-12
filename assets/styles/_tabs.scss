@@ -1,0 +1,25 @@
+lib-muk-nav-tabs {
+  .mat-mdc-tab-link-container {
+    .mat-mdc-tab-list {
+      .mat-mdc-tab-links {
+        @include flex-auto;
+        gap: $font-size-base;
+        border-bottom: 1px solid $gray-line-separator;
+        margin-bottom: $font-size-2xl;
+        .mdc-tab--active {
+          border-bottom: 2px solid $color-primary;
+        }
+        .tabs__border {
+          li {
+            .mat-mdc-tab-ripple {
+              background: transparent;
+              border-left: 0px !important;
+              border-radius: 0px !important;
+              padding: $font-size-base;
+            }
+          }
+        }
+      }
+    }
+  }
+}

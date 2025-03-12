@@ -1,0 +1,66 @@
+
+  .tabs__primary .mat-mdc-tab-link .mdc-tab-indicator__content--underline{
+    border-color: $primary-purple !important;
+}
+.tabs__primary .mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{
+  color: $primary-purple !important;
+}
+.tabs__primary .mat-mdc-tab-link .mdc-tab__ripple::before{
+    background-color: inherit !important;
+
+}
+.tabs__primary .mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before{
+    color: $primary-purple !important;
+
+}
+.tabs__primary .mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{
+    color: $primary-purple !important;
+
+}
+.tabs__primary .mat-mdc-tab-link .mdc-tab__text-label{
+    color: $black !important;
+
+}
+.tabs__primary .mat-mdc-tab-nav-bar{
+    color: $primary-purple !important;
+
+}
+
+.tabs__border .mat-ripple.mat-mdc-tab-ripple{
+    background: $off-white;
+    border-left: 6px solid $primary-purple;
+    border-radius: 6px;  
+    padding: 16px ;
+}
+.tabs__border .mat-mdc-tab-link .mdc-tab-indicator__content--underline{
+    display: none;
+}
+
+.tabs__coral .mat-mdc-tab-link .mdc-tab-indicator__content--underline{
+  border-color: $coral !important;
+}
+.tabs__coral .mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{
+  color: $coral !important;
+  
+}
+.tabs__coral .mat-mdc-tab-link .mdc-tab__ripple::before{
+  background-color: inherit !important;
+}
+
+.tabs__coral .mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before{
+  background-color: $coral !important;
+
+}
+.tabs__coral .mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{
+  color: $coral !important;
+
+}
+.tabs__coral .mat-mdc-tab-link .mdc-tab__text-label{
+  color: $black !important;
+}
+
+.tabs__coral .mat-mdc-tab-nav-bar{
+  color: $coral !important;
+
+
+}

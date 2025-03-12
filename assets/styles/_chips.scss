@@ -1,0 +1,96 @@
+.chips-container {
+  padding: 0 8px !important;
+  border-radius: 8px !important;
+  color: #7711c6;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 16px !important; /* 133.333% */
+}
+
+.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action
+  .mdc-evolution-chip__action--primary {
+  @extend .chips-container;
+}
+
+.mat-mdc-chip-remove .mat-icon {
+  font-size: 14px !important;
+  height: 14px !important;
+  color: #8e9aa0 !important;
+  display: flex !important;
+}
+.mat-mdc-chip.mat-mdc-standard-chip {
+  border-radius: 6px !important;
+  border: 1px solid #7711c633 !important;
+  background: #7711c60d !important;
+}
+.mat-mdc-chip.mdc-evolution-chip--with-trailing-action
+  .mat-mdc-chip-action-label {
+  //   color: #8e9aa0 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important; /* 133.333% */
+}
+.mdc-evolution-chip-set__chips {
+  margin-bottom: 2rem !important;
+}
+span.mdc-evolution-chip__action.mat-mdc-chip-action.mdc-evolution-chip__action--primary.mdc-evolution-chip__action--presentational {
+  padding: 1rem !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important; /* 114.286% */
+}
+// span.mdc-evolution-chip__text-label.mat-mdc-chip-action-label{
+//     color: #FFF !important;
+
+// }
+.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
+  .mdc-evolution-chip__action--primary::before {
+  border-radius: 8px !important;
+  // background: #7711C6 !important;
+  // border: none !important ;
+  border: none !important;
+}
+
+app-employee-activity-list {
+  .mat-mdc-chip.mat-mdc-standard-chip {
+    @extend .mat-mdc-standard-chip;
+    padding: 0 8px !important;
+    background: #ffffff !important;
+    color: #8e9aa0 !important;
+    font-size: 12px !important;
+    border: none !important;
+  }
+
+  .mat-mdc-chip {
+    .mdc-evolution-chip__text-label {
+      color: #8e9aa0 !important;
+    }
+    &.active-sub-filter-chip {
+      border-radius: 8px !important;
+      background: #7711c6 !important;
+      border: none !important;
+      color: #fff !important;
+      .mdc-evolution-chip__text-label {
+        color: #fff !important;
+      }
+    }
+  }
+  .table-actions {
+    .mdc-evolution-chip__text-label {
+      color: #4f008c!important;
+    }
+    .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action
+      .mdc-evolution-chip__action--primary {
+      @extend .chips-container;
+    }
+    .mat-mdc-chip.mat-mdc-standard-chip {
+      border-radius: 6px !important;
+      border: 1px solid #7711c633 !important;
+      background: #7711c60d !important;
+    }
+  }
+}
+.mat-mdc-standard-chip .mdc-evolution-chip__text-label {
+  font-weight: 400 !important;
+}

@@ -1,0 +1,302 @@
+@import "./upload";
+.flex-center{
+  @include flex-center;
+}
+.upload-file-input {
+  height: 112px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  background: $light-gray;
+  border: 0.5px dashed $dark-gray;
+  overflow: hidden;
+  @include flex-center;
+  padding: 0 5px;
+  flex-direction: column;
+  cursor: pointer;
+  .stc-parent {
+    width: 100%;
+    height: 100%;
+    .image-uploader {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .image-uploader-icon {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: 99999999;
+
+        border: none;
+        box-shadow: none;
+        background-color: $white;
+        border-radius: 6px;
+        @include flex-center;
+        padding: 5px;
+        margin: 0 3px;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        transition: all 0.3s ease-in;
+      }
+      .image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      &:has(.icon) {
+        @include flex-center;
+      }
+    }
+  }
+  .stc-subtitle__upolader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &.custom {
+    border-radius: 0;
+    background-color: $white;
+  }
+
+  &.medium {
+    height: 75px;
+
+    .sfi-upload-to-cloud {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: $font-size-base !important;
+    }
+  }
+
+  &.mini {
+    height: 48px;
+
+    .sfi-upload-to-cloud {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: $font-size-base !important;
+    }
+  }
+}
+.upload-image-input {
+  height: 150px;
+  width: 150px;
+  @include flex-center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 50%;
+  border: 0.5px dashed $dark-gray;
+  cursor: pointer;
+  input{
+    border-radius: 50%;
+  }
+  .stc-parent {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    border-radius: 50%!important;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    -ms-border-radius: 50%!important;
+    -o-border-radius: 50%!important;
+    .image-uploader{
+      border-radius: 50%;
+      background: $light-gray;
+      overflow: hidden;
+
+      width: 100%;
+      height: 100%;
+      .image-uploader-icon {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        z-index: 99999999;
+      }
+      .image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      &:has(.icon) {
+        @include flex-center;
+      }
+    }
+  }
+  .stc-subtitle__upolader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &.custom {
+    border-radius: 0;
+    background-color: $white;
+  }
+
+  &.medium {
+    height: 75px;
+
+    .sfi-upload-to-cloud {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: $font-size-base !important;
+    }
+  }
+
+  &.mini {
+    height: 48px;
+
+    .sfi-upload-to-cloud {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: $font-size-base !important;
+    }
+  }
+}
+.uploaded-file-item {
+  background-color: $off-white6;
+  padding: 14px;
+  align-items: center;
+  border-radius: 4px;
+  gap: 1rem;
+  margin: 7px;
+  .uploader {
+    @include flex-between;
+    .sub_uploader {
+      display: flex;
+      gap: 1rem;
+      .uploaded-icon {
+        min-width: 23px;
+        height: 25px;
+        @include flex-center;
+        background-color: $secondary-purple;
+        &.progress-upload {
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "";
+            color: $white;
+            position: absolute;
+            background-color: $oasis-light;
+            width: 100%;
+            height: 100%;
+            @include flex-center;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: slideHeight 3s ease-in forwards;
+          }
+
+          .sfi {
+            opacity: 0;
+            animation: fadein 0.1s ease-in 3s forwards;
+          }
+        }
+
+        .sfi {
+          font-size: $font-size-xs;
+          color: $white;
+        }
+      }
+      .file-name {
+        font-size: 0.8rem;
+        font-weight: $font-medium;
+        color: $black;
+        line-height: 1.5;
+        margin: 0px !important;
+      }
+    }
+    .uploaded-file-actions {
+      @include flex-start;
+      button {
+        border: none;
+        box-shadow: none;
+        background-color: $white;
+        border-radius: 6px;
+        @include flex-center;
+        padding: 5px;
+        margin: 0 3px;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
+
+  .file-size {
+    font-size: 0.8rem;
+    font-weight: $font-regular;
+    color: $dark-gray;
+    line-height: 1.5;
+  }
+
+  .attached-info-popover {
+    position: relative;
+    margin: 15px -17px;
+
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba($black, 9%);
+
+    @media (max-width: 768px) {
+      margin: 15px 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      margin: -13px -15px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid $white;
+      @media (max-width: 768px) {
+        content: none;
+      }
+    }
+  }
+
+  .text-truncate {
+    @include truncate;
+  }
+  .text-color-coral {
+    color: $coral;
+  }
+  .stc-icon__delete {
+    color: $coral !important;
+    cursor: pointer;
+  }
+  .stc-row__status {
+    @include column_flex_end;
+  }
+}
+@keyframes slideHeight {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

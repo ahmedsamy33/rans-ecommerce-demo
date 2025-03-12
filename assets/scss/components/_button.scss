@@ -1,0 +1,104 @@
+
+.stc-btn{
+    border: none;
+    padding: 8px 22px;
+    border-radius: 4px;
+}
+.stc-btn__flex{
+  @include flex-center;
+    gap: 0.5rem;
+}
+.stc-btn__primary{
+@include btn__primary;
+}
+.stc-btn__secondary{
+@include btn__secondary;
+}
+.stc-btn__light{
+@include btn__light;
+}
+.stc-text_btn{
+  @include flex-center ;
+}
+.mat-mdc-raised-button:not(:disabled){
+  box-shadow: none !important;
+}
+.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{
+  opacity: 0 !important;
+}
+
+::ng-deep{
+    .muk-btn{
+      padding: 0.6rem 1.25rem !important;
+      border: 1px solid transparent!important;
+      &.muk-btn-rounded-pill{
+        @include border-radius-rounded-pill;
+      }
+      &:not(.muk-btn-rounded-pill){
+        @include border-radius-rounded-smooth;
+      }
+      &.muk-btn-primary{
+        @include btn-primary;
+      }
+      &.muk-btn-primary-light{
+        @include btn-primary-light;
+      }
+      &.muk-btn-outline-primary{
+        @include btn-outline-primary;
+      }
+      &.muk-btn-secondary{
+        @include btn-secondary;
+      }
+      &.muk-btn-secondary-light{
+        @include btn-secondary-light;
+      }
+      &.muk-btn-outline-secondary{
+        @include btn-outline-secondary ;
+      }
+      &.muk-btn-success{
+        @include btn-success;
+      }
+      &.muk-btn-success-light{
+        @include btn-success-light;
+      }
+      &.muk-btn-outline-success{
+        @include btn-outline-success;
+      }
+      &.muk-btn-danger{
+        @include btn-danger;
+      }
+      &.muk-btn-danger-light{
+        @include btn-danger-light;
+      }
+      &.muk-btn-outline-danger{
+        @include btn-outline-danger;
+      }
+      &.muk-btn-warning{
+        @include btn-warning;
+      }
+      &.muk-btn-warning-light{
+        @include btn-warning-light;
+      }
+      &.muk-btn-outline-warning{
+        @include btn-outline-warning;
+      }
+      &.muk-btn-info{
+        @include btn-info;
+      }
+      &.muk-btn-info-light{
+        @include  btn-info-light;
+      }
+      &.muk-btn-outline-info{
+        @include btn-outline-info;
+      }
+      &.muk-btn-dark{
+        @include btn-dark;
+      }
+      &.muk-btn-dark-light{
+        @include btn-dark-light;
+      }
+      &.muk-btn-outline-dark{
+        @include btn-outline-dark;
+      }
+    }
+  }

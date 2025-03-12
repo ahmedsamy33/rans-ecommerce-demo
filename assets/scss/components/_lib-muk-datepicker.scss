@@ -1,0 +1,38 @@
+::ng-deep.date_picker{
+    .stc-input .mat-mdc-form-field-infix{
+        min-height: 16px!important;
+        padding-block: 0px !important;
+    }
+    .mat-datepicker-content .mat-calendar{
+        width: 296px;
+        height: 354px;
+    }
+    .mat-calendar-content{
+        margin: 0px !important;
+    }
+    .mat-calendar{
+        width: 296px;
+        height: 354px; 
+    }
+    .mat-date-range-input-container{
+        margin-block: 1rem;
+    }
+    .mat-mdc-form-field-subscript-wrapper.mat-mdc-form-field-bottom-align{
+        display: none !important;
+    }
+    .mdc-line-ripple.mdc-line-ripple--deactivating{
+        display: none !important;
+    }
+    .mat-mdc-form-field-flex{
+        height: 50px;
+    }
+    .mat-mdc-icon-button.mat-mdc-button-base{
+        @include flex-center;
+    }
+    
+
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled){
+    padding-right: 1rem !important;
+}
+}

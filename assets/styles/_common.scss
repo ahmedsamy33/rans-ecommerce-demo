@@ -1,0 +1,105 @@
+// Start Scroll dialog
+.modal-container {
+    ::-webkit-scrollbar {
+      display: block !important;
+    }
+    }
+  ::-webkit-scrollbar {
+      width: 4px;
+      height: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: #ccc;
+      -webkit-box-shadow: none;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      -webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar-thumb:active {
+      background: #888;
+      -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+// End Scroll dialog
+
+// Start Sidebar Layout
+
+.app-layout { 
+    .home { 
+      position: absolute; 
+      top: 0; 
+      left: 214px; 
+      height: 100vh; 
+      width: calc(100% - 214px); 
+      background-color: #f8f8f8; 
+    } 
+   
+    &.sidebar-closed .home { 
+      left: 98px; 
+      width: calc(100% - 98px); 
+    } 
+    // Mobile responsiveness
+    @media (max-width: 768px) { 
+      .home { 
+        left: 0px !important; 
+        width: $percent-100 !important; 
+      } 
+    }
+  } 
+  .sidebar-closed {
+    .sidebar__menu-links {
+        margin: 1rem auto;
+    }
+}
+// End Sidebar Layout
+
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+
+  .truncate-responsive {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 768px) {
+      width: $percent-100;
+    }
+  }
+
+  .truncate-width {
+    @extend .truncate-responsive;
+    width: 100px;
+  }
+  .stc-status {
+    width: auto;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+}
+  .status-pending {
+    color: #FF6A39;
+    background: rgba(255, 106, 57, 0.10);
+  }
+  .status-overdue {
+    color: #FF375E;
+    background: rgba(255, 55, 94, 0.15);
+  }
+  .status-draft {
+    color: #8E9AA0;
+    background: rgba(142, 154, 160, 0.10);
+  }
+  .btn-submit-light {
+    border-radius: 6px;
+    border: 1.5px solid rgba(142, 154, 160, 0.50);
+    color: #8E9AA0;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 8px;
+    line-height: 16px; /* 145.455% */
+  }

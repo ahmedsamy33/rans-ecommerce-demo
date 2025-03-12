@@ -1,0 +1,19 @@
+.stc-chip {
+      @include flex-center;
+      gap: 32px;
+      padding: 0 8px;
+    }
+    .stc-chip_primary {
+      background: $primary-chips !important;
+    }
+    .stc-chip_coral {
+      background: $coral2 !important;
+    }
+    .mdc-evolution-chip,
+    .mdc-evolution-chip__cell,
+    .mdc-evolution-chip__action {
+      padding: 0 !important;
+    }
+    .stc-icon{
+      color: $black;
+    }

@@ -1,0 +1,1 @@
+import{tb as i}from"./chunk-VU6Q4IP4.js";var p=class e{transform(r,...t){return r?r.replace(/_/g," ").charAt(0).toUpperCase()+r.replace(/_/g," ").slice(1).toLowerCase():""}static \u0275fac=function(t){return new(t||e)};static \u0275pipe=i({name:"capitalize",type:e,pure:!0})};export{p as a};
